@@ -1,0 +1,43 @@
+{
+  "widgets": [
+    {
+      "name": "asddasdas",
+      "id": "9da18ba5-4acd-4749-bfb8-c4beaf95a889",
+      "startPoint": {
+        "col": 0,
+        "row": 0
+      },
+      "endPoint": {
+        "col": 1,
+        "row": 2
+      },
+      "color": "red"
+    },
+    {
+      "name": "asd",
+      "id": "0884b865-f848-4dd7-a870-0aaf2f447f9d",
+      "startPoint": {
+        "row": 0,
+        "col": 5
+      },
+      "endPoint": {
+        "row": 1,
+        "col": 4
+      },
+      "color": "blue"
+    },
+    {
+      "name": "аимв",
+      "id": "0f17dccb-427a-440c-8c4f-7d22b07141d0",
+      "color": "#65c8c5",
+      "startPoint": {
+        "row": 0,
+        "col": 2
+      },
+      "endPoint": {
+        "row": 2,
+        "col": 4
+      }
+    }
+  ]
+}

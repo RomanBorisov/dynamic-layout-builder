@@ -1,0 +1,15 @@
+.wrapper {
+    &__header {
+        padding: 20px;
+        background: tomato;
+
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    &__content {
+        padding: 20px;
+        background: lightblue;
+    }
+}

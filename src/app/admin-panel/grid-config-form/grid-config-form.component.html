@@ -1,0 +1,23 @@
+<form
+    [formGroup]="form"
+    (ngSubmit)="submit()"
+    class="grid-config-form"
+>
+    <div class="grid-config-form__body">
+        <input
+            type="text"
+            formControlName="name"
+            class="input"
+            placeholder="Grid Name"
+        />
+    </div>
+
+    <div class="grid-config-form__footer">
+        <button
+            type="submit"
+            class="button"
+        >
+            Save
+        </button>
+    </div>
+</form>

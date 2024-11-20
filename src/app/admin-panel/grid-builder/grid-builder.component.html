@@ -1,0 +1,43 @@
+<div class="grid-builder__widget-list">
+    <div
+        *ngFor="let widget of addedWidgets$ | async"
+        class="grid-builder__widget"
+        [ngStyle]="{
+            'background-color': getBackgroundColor(widget.color, 0.5),
+            'border-color': widget.color
+        }"
+        [class.grid-builder__widget--selected]="widget.id === (selectedWidget$ | async)?.id"
+        (click)="selectWidget(widget)"
+    >
+        <div class="grid-builder__widget-header">
+            {{ widget.name }}
+        </div>
+
+        <div class="grid-builder__widget-body">
+            <button
+                class="button"
+                type="button"
+                (click)="removeWidget($event, widget)"
+            >
+                Remove
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="grid-builder__container">
+    <div
+        *ngFor="let row of rows; let rowIndex = index"
+        class="grid-builder__row"
+    >
+        <button
+            *ngFor="let col of cols; let colIndex = index"
+            class="grid-builder__cell button"
+            type="button"
+            [ngStyle]="{'background-color': getWidgetColor(rowIndex, colIndex)}"
+            (click)="selectCell(rowIndex, colIndex)"
+        >
+            {{ rowIndex + 1 }}:{{ colIndex + 1 }}
+        </button>
+    </div>
+</div>
