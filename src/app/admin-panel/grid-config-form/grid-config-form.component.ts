@@ -34,6 +34,16 @@ export class GridConfigFormComponent implements OnInit {
     public submit() {
         this._widgetService.addWidget(this.form.value).subscribe((widget) => {
             this._gridBuilderState.addWidget(this.form.value);
+
+            this.form.setValue(this._generateWidget());
         });
+    }
+
+    private _generateWidget() {
+        return {
+            name: '',
+            id: AppUtils.guid(),
+            color: AppUtils.generateRandomColor()
+        };
     }
 }

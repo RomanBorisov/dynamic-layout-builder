@@ -1,0 +1,9 @@
+.layout {
+    display: grid;
+
+    &__empty {
+        display: none;
+
+        grid-area: empty;
+    }
+}

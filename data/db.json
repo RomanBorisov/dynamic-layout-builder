@@ -1,42 +1,55 @@
 {
   "widgets": [
     {
-      "name": "asddasdas",
-      "id": "9da18ba5-4acd-4749-bfb8-c4beaf95a889",
+      "name": "header",
+      "id": "8fa644aa-8194-4235-bfde-daeb58a6a613",
+      "color": "#ad6e34",
       "startPoint": {
-        "col": 0,
-        "row": 0
+        "row": 0,
+        "col": 0
       },
       "endPoint": {
-        "col": 1,
-        "row": 2
-      },
-      "color": "red"
-    },
-    {
-      "name": "asd",
-      "id": "0884b865-f848-4dd7-a870-0aaf2f447f9d",
-      "startPoint": {
         "row": 0,
         "col": 5
-      },
-      "endPoint": {
-        "row": 1,
-        "col": 4
-      },
-      "color": "blue"
+      }
     },
     {
-      "name": "аимв",
-      "id": "0f17dccb-427a-440c-8c4f-7d22b07141d0",
-      "color": "#65c8c5",
+      "name": "footer",
+      "id": "274cd68c-61b9-4f79-ace8-657af48f19dc",
+      "color": "#de57b0",
       "startPoint": {
-        "row": 0,
-        "col": 2
+        "row": 5,
+        "col": 0
       },
       "endPoint": {
-        "row": 2,
-        "col": 4
+        "row": 5,
+        "col": 5
+      }
+    },
+    {
+      "name": "main",
+      "id": "b0f9d0af-0d77-49cc-8c03-1e75b5d2f70b",
+      "color": "#66653f",
+      "startPoint": {
+        "row": 1,
+        "col": 3
+      },
+      "endPoint": {
+        "row": 4,
+        "col": 5
+      }
+    },
+    {
+      "name": "navigation",
+      "id": "4bd1a3f8-1314-484b-8586-84231f9d1258",
+      "color": "#9d728a",
+      "startPoint": {
+        "row": 1,
+        "col": 0
+      },
+      "endPoint": {
+        "row": 4,
+        "col": 2
       }
     }
   ]
